@@ -1,0 +1,45 @@
+version: 0.2
+
+# AWS CodeBuild buildspec file for static website deployment
+# This file defines the build process for the CI/CD pipeline
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18
+    commands:
+      - echo "Installing dependencies..."
+      - echo "No dependencies required for static HTML site"
+
+  pre_build:
+    commands:
+      - echo "Pre-build phase started on `date`"
+      - echo "Validating HTML files..."
+      - |
+        # Check if index.html exists
+        if [ ! -f index.html ]; then
+          echo "ERROR: index.html not found!"
+          exit 1
+        fi
+      - echo "HTML validation passed"
+
+  build:
+    commands:
+      - echo "Build phase started on `date`"
+      - echo "Processing static assets..."
+      - ls -la
+      - echo "Build completed successfully"
+
+  post_build:
+    commands:
+      - echo "Post-build phase started on `date`"
+      - echo "Preparing artifacts for deployment..."
+      - echo "Build completed on `date`"
+
+artifacts:
+  files:
+    - '**/*'
+  name: BuildArtifact
+
+cache:
+  paths: []

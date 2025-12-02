@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS CodePipeline Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                    <rect width="60" height="60" rx="12" fill="url(#gradient)"/>
+                    <path d="M30 15L45 25V40L30 50L15 40V25L30 15Z" fill="white"/>
+                    <defs>
+                        <linearGradient id="gradient" x1="0" y1="0" x2="60" y2="60">
+                            <stop offset="0%" stop-color="#667eea"/>
+                            <stop offset="100%" stop-color="#764ba2"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <h1>Welcome to My AWS Pipeline Demo!</h1>
+            <p class="subtitle">Automated Deployment with AWS CodePipeline</p>
+        </header>
+
+        <main>
+            <section class="hero">
+                <h2>🚀 This Website is Deployed Automatically!</h2>
+                <p>Every time code is pushed to GitHub, AWS CodePipeline automatically builds and deploys this website to S3.</p>
+            </section>
+
+            <section class="features">
+                <div class="feature-card">
+                    <div class="icon">📦</div>
+                    <h3>Source Control</h3>
+                    <p>Code hosted on GitHub with version control and collaboration features.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="icon">🔨</div>
+                    <h3>Automated Build</h3>
+                    <p>AWS CodeBuild compiles and validates code automatically on every commit.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="icon">🌐</div>
+                    <h3>Instant Deploy</h3>
+                    <p>Changes are deployed to S3 within minutes, making them live instantly.</p>
+                </div>
+            </section>
+
+            <section class="pipeline-flow">
+                <h2>CI/CD Pipeline Flow</h2>
+                <div class="flow">
+                    <div class="flow-step">
+                        <div class="step-number">1</div>
+                        <h4>Developer</h4>
+                        <p>Commits code to GitHub</p>
+                    </div>
+                    <div class="arrow">→</div>
+                    <div class="flow-step">
+                        <div class="step-number">2</div>
+                        <h4>Source</h4>
+                        <p>Pipeline detects changes</p>
+                    </div>
+                    <div class="arrow">→</div>
+                    <div class="flow-step">
+                        <div class="step-number">3</div>
+                        <h4>Build</h4>
+                        <p>CodeBuild validates code</p>
+                    </div>
+                    <div class="arrow">→</div>
+                    <div class="flow-step">
+                        <div class="step-number">4</div>
+                        <h4>Deploy</h4>
+                        <p>Published to S3 bucket</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="benefits">
+                <h2>Benefits of CI/CD</h2>
+                <div class="benefits-grid">
+                    <div class="benefit">
+                        <h4>⚡ Faster Deployment</h4>
+                        <p>Deploy in minutes instead of hours or days</p>
+                    </div>
+                    <div class="benefit">
+                        <h4>🛡️ Reduced Errors</h4>
+                        <p>Automated processes eliminate manual mistakes</p>
+                    </div>
+                    <div class="benefit">
+                        <h4>🔄 Continuous Updates</h4>
+                        <p>Push updates multiple times per day</p>
+                    </div>
+                    <div class="benefit">
+                        <h4>📊 Better Quality</h4>
+                        <p>Automated testing catches bugs early</p>
+                    </div>
+                    <div class="benefit">
+                        <h4>💰 Cost Effective</h4>
+                        <p>Pay only for what you use</p>
+                    </div>
+                    <div class="benefit">
+                        <h4>🎯 Easy Rollback</h4>
+                        <p>Quickly revert to previous versions</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="tech-stack">
+                <h2>Technology Stack</h2>
+                <div class="tech-list">
+                    <div class="tech-item">
+                        <strong>Source:</strong> GitHub
+                    </div>
+                    <div class="tech-item">
+                        <strong>Pipeline:</strong> AWS CodePipeline
+                    </div>
+                    <div class="tech-item">
+                        <strong>Build:</strong> AWS CodeBuild
+                    </div>
+                    <div class="tech-item">
+                        <strong>Hosting:</strong> Amazon S3
+                    </div>
+                    <div class="tech-item">
+                        <strong>Frontend:</strong> HTML, CSS, JavaScript
+                    </div>
+                </div>
+            </section>
+
+            <section class="demo-info">
+                <h2>About This Demo</h2>
+                <div class="info-box">
+                    <p>This is a demonstration project showcasing AWS CodePipeline's capabilities for continuous integration and continuous deployment (CI/CD).</p>
+                    <p><strong>Pipeline Stages:</strong></p>
+                    <ul>
+                        <li><strong>Stage 1 - Source:</strong> Pulls code from GitHub repository</li>
+                        <li><strong>Stage 2 - Build:</strong> Validates and processes code using buildspec.yml</li>
+                        <li><strong>Stage 3 - Deploy:</strong> Uploads files to S3 bucket for static website hosting</li>
+                    </ul>
+                    <p class="deployment-time">⏱️ Total deployment time: ~2-3 minutes from git push to live website!</p>
+                </div>
+            </section>
+
+            <section class="dream-section">
+                <h2>My Dream - Mount Everest</h2>
+                <div class="dream-container">
+                    <div class="dream-image">
+                        <img src="everest.jpg" alt="Mount Everest - The Roof of the World">
+                    </div>
+                    <div class="dream-quote">
+                        <blockquote>
+                            "The mountains are calling and I must go. One day, I will stand at the top of the world - Mount Everest. Not because it is easy, but because dreams are meant to be chased. Nature is my soul, and Everest is my destiny."
+                        </blockquote>
+                        <p class="quote-author">- My Dream, My Journey</p>
+                    </div>
+                    <div class="dream-facts">
+                        <div class="fact">
+                            <span class="fact-number">8,849m</span>
+                            <span class="fact-label">Height - Roof of the World</span>
+                        </div>
+                        <div class="fact">
+                            <span class="fact-number">1953</span>
+                            <span class="fact-label">First Summit by Humans</span>
+                        </div>
+                        <div class="fact">
+                            <span class="fact-number">Nepal</span>
+                            <span class="fact-label">Location - Himalayas</span>
+                        </div>
+                    </div>
+                    <p class="dream-message">"I love nature very much. Seeing Mount Everest is my biggest dream. One day, I will make it happen."</p>
+                </div>
+            </section>
+
+            <section class="cta">
+                <h2>Try It Yourself!</h2>
+                <p>Want to build your own CI/CD pipeline? Follow these AWS services:</p>
+                <div class="services">
+                    <a href="https://aws.amazon.com/codepipeline/" target="_blank" class="service-link">AWS CodePipeline</a>
+                    <a href="https://aws.amazon.com/codebuild/" target="_blank" class="service-link">AWS CodeBuild</a>
+                    <a href="https://aws.amazon.com/s3/" target="_blank" class="service-link">Amazon S3</a>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Built with ❤️ using AWS CodePipeline</p>
+            <p class="version">Version 1.0 | Last Updated: <span id="lastUpdate"></span></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
